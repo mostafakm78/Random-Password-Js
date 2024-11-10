@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./fonts/font.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Genarate Password</title>
+</head>
+<body id="body">
+    <div class="container">
+        <h1 class="text-1">ساخت یک <br> <span class="text-2">پسورد تصادفی</span></h1>
+        <button id="dark-mode" class="btndark"><i class="fa fa-moon-o"></i></button>
+        <div class="display">
+            <input type="text" placeholder=" پسورد" id="Password">
+            <img onclick="copyPass()" src="./copy.png">
+            <img src="./eye-open.png" id="Eye">
+        </div>
+        <p class="pass-msg">پسورد شما <span id="strenght"></span></p>
+        <button onclick="createPass()" id="btn">
+            ساخت پسورد
+        </button>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

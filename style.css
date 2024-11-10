@@ -1,0 +1,143 @@
+* {
+    transition: 1s;
+}
+
+body {
+    background: #616161;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #7da8a5, #616161);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #7da8a5, #616161); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: vazir;
+    color: white;
+}
+
+body.toggle {
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    transition: 1s;
+}
+
+.container {
+    margin: 150px 200px;
+}
+
+.container .text-1 {
+    font-size: 60px;
+    line-height: 1.3;
+    color: black;
+}
+
+.container .text-1.toggle {
+    font-size: 60px;
+    line-height: 1.3;
+    color: white;
+    transition: 1s;
+}
+
+.container .text-1 .text-2 {
+    color: #15B392;
+}
+
+.container .text-1 .text-2.toggle {
+    color: #FF4191;
+    transition: 1s;
+}
+
+
+.display {
+    width: 60%;
+    background-color: #EEE;
+    border-radius: 10px;
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    border: 2px solid rgba(0, 0, 0, 0.001);
+}
+
+.display input {
+    border: none;
+    outline: none;
+    font-family: inherit;
+    font-size: 24px;
+    background-color: #EEE;
+    width: 70%;
+    padding: 0 20px 0 0;
+}
+
+.display img {
+    width: 30px;
+    background-color: #EEE;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+#btn {
+    border: none;
+    outline: none;
+    background-color: #15B392;
+    color: white;
+    font-family: inherit;
+    font-size: 24px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+
+}
+
+#btn.toggle {
+    border: none;
+    outline: none;
+    background-color: #183D3D;
+    color: #15B392;
+    font-family: inherit;
+    font-size: 24px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+
+}
+
+#dark-mode {
+    margin: 0 620px 0 0;
+    outline: none;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: #EEE;
+    cursor: pointer;
+}
+
+#dark-mode i {
+    font-size: 20px;
+    color : rgba(0, 0, 0, 0.56)
+}
+
+#dark-mode.toggle {
+    margin: 0 620px 0 0;
+    outline: none;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: #183D3D;
+    cursor: pointer;
+    transition: 1s;
+}
+
+#dark-mode.toggle i.toggle {
+    font-size: 20px;
+    color : #EEE;
+    transition: 1s;
+}
+
+.pass-msg {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: rgba(33, 33, 33, 0.862);
+    display: none;
+}
+
+.pass-msg.toggle {
+    color: white;
+}
